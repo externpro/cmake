@@ -137,6 +137,7 @@ set(b2Install install
   --libdir=<INSTALL_DIR>/${CMAKE_INSTALL_LIBDIR}
   --includedir=<INSTALL_DIR>/${CMAKE_INSTALL_INCLUDEDIR}
   --cmakedir=<INSTALL_DIR>/${CMAKE_INSTALL_CMAKEDIR}
+  --datarootdir=<INSTALL_DIR>/${CMAKE_INSTALL_DATAROOTDIR}
   )
 ExternalProject_Add(${tgt}
   SOURCE_DIR ${CMAKE_SOURCE_DIR}
