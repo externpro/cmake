@@ -5,7 +5,7 @@ set(Boost_USE_MULTITHREADED ON)
 set(Boost_USE_STATIC_RUNTIME ON)
 #set(Boost_VERBOSE TRUE) # enable verbose output of BoostConfig.cmake
 #set(Boost_DEBUG TRUE) # enable debug (even more verbose) output of BoostConfig.cmake
-find_package(Boost @CMAKE_PROJECT_VERSION@ BYPASS_PROVIDER REQUIRED ALL
+find_package(Boost @CMAKE_PROJECT_VERSION@ BYPASS_PROVIDER REQUIRED
   PATHS ${CMAKE_CURRENT_LIST_DIR}/Boost-@CMAKE_PROJECT_VERSION@ NO_DEFAULT_PATH
   )
 mark_as_advanced(Boost_DIR)

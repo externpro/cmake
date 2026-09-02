@@ -156,11 +156,6 @@ endif()
 configure_file(${CMAKE_CURRENT_LIST_DIR}/xpboost-targets.cmake
   ${baseDir}/Install/${tgt}/${CMAKE_INSTALL_CMAKEDIR}/xpboost-targets.cmake @ONLY
   )
-string(JOIN "\n" EXT2
-  "set(BOOST_LIBRARIES \${Boost_LIBRARIES}) # from xpboost-targets.cmake"
-  "list(APPEND reqVars BOOST_LIBRARIES)"
-  ""
-  )
 xpExternPackage(REPO_NAME boost TARGETS_FILE xpboost-targets NO_EXPORT
   BASE boost-${CMAKE_PROJECT_VERSION} XPDIFF "native" DEPS bzip2 zlib
   WEB "http://www.boost.org/ 'Boost website'" UPSTREAM "github.com/boostorg/boost"
